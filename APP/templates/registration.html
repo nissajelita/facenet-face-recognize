@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Registrasi User</title>
+  </head>
+  <body>
+    <h1>Form Registrasi User</h1>
+    <div class="row">
+      <div class="col-7">
+        <form action="" method="post">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+
+          <label for="nik">NIK:</label>
+          <input type="text" id="nik" name="nik" required />
+          <br />
+
+          <input type="submit" value="Daftar" />
+        </form>
+      </div>
+      <div class="col-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <h3 class="mt-5">Ambil Gambar</h3>
+              <img src="{{ url_for('ambil_signature') }}" width="640" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
